@@ -1,0 +1,51 @@
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+**/application-local.yml
+**/application-local.yaml
+**/application-secrets.yml
+**/application-secrets.yaml
+*.pem
+*.key
+*.jks
+*.keystore
+
+# Java and Maven build output
+
+target/
+*.class
+
+# Gradle build output
+
+.gradle/
+build/
+
+# Android local configuration and generated files
+
+local.properties
+.cxx/
+.externalNativeBuild/
+captures/
+*.apk
+*.aab
+
+# IDE settings
+
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# Operating system files
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+
+*.log
