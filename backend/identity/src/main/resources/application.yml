@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: identity-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/alltime_identity?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+jwt:
+  secret: dGhpcy1pcy1hLXNlY3VyvS0yNTYtYml0udgh9fJldC1rZXktZm9yLWFsbHRpbWUtYXBwbGljYXRpb42
+  expiration: 3600000
+
+
